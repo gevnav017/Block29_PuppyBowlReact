@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.playerAvatar {
+    transition: all .3s;
+}
+
+.playerAvatar:hover {
+    box-shadow: -6px 6px 6px gray, 6px 6px 6px gray;
+    transform: translateY(-6px);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.puppy-bowl-img {
+    animation: spin 3s linear;
+}
+
+@keyframes spin {
+   25% {
+    transform: rotate(90deg) scale(120%);
+   }
+   50% {
+    transform: rotate(180deg) scale(130%);
+    
+   }
+   75% {
+    transform: rotate(270deg) scale(110%);
+   }
+   100% {
+    transform: rotate(360deg) scale(100%);
+   }
+}
